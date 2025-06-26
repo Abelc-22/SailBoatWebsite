@@ -1,0 +1,278 @@
+@keyframes moving{
+    0% {right: 100%; top: 50%}
+    10% {top: 40%;}
+    20% {top: 50%;}
+    30% {top: 40%;}
+    40% {top: 50%;}
+    50% {right: -20%; top: 50%;}
+    60% {top: 40%;}
+    70% {top: 50%;}
+    80% {top: 40%;}
+    90% {top: 50%;}
+    100% {right: 100%; top: 50%;}
+}
+
+@keyframes movingWater1 {
+    0% {bottom: 20%}
+    50% {bottom: 5%;}
+    100% {bottom: 15%;}
+}
+
+@keyframes movingWater2 {
+    0% {bottom: 22%}
+    20% {bottom: 13%;}
+    50% {bottom: 5%;}
+    100% {bottom: 18%;}
+}
+
+@keyframes movingWater3 {
+    0% {bottom: 19%;}
+    25% {bottom: 13%;}
+    50% {bottom: 5%;}
+    100% {bottom: 20%;}
+}
+
+@keyframes movingWater4 {
+    0% {bottom: 19%;}
+    25% {bottom: 13%;}
+    50% {bottom: 10%;}
+    100% {bottom: 20%;}
+}
+
+@keyframes movingWater5 {
+    0% {bottom: 5%}
+    45% {bottom: 20%;}
+    65% {bottom: 15%;}
+    100% {bottom: 13%;}
+}
+
+@keyframes movingWater6 {
+    0% {bottom: 5%}
+    50% {bottom: 20%;}
+    60% {bottom: 17%;}
+    100% {bottom: 8%;}
+}
+
+
+@keyframes movingWater7 {
+    0% {bottom: 5%}
+    50% {bottom: 11%;}
+    60% {bottom: 18%;}
+    100% {bottom: 10%;}
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: rgb(126, 203, 255);
+}
+#sailboat {
+    position: absolute;
+    transform: rotateY(180deg);
+    width: fit-content;
+    height: fit-content;
+    right: 75%;
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.box1 {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background: #555;
+    z-index: 1;
+    left: 53px;
+    top: 50px;
+}
+
+.circle1 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    transform: skew(0deg);
+    z-index: 2;
+    border-radius: 10rem 0 0;
+    rotate: 270deg;
+    top: 50px;
+    left: 5px
+}
+
+.box2 {
+    position: absolute;
+    height: 35px;
+    width: 130px;
+    background-color: rgb(126, 203, 255);
+    z-index: 4;
+    left: 60px;
+    top: 30px;
+    border-radius: 1rem;
+}
+
+.box3 {
+    position: absolute;
+    height: 35px;
+    width: 56px;
+    background-color: rgb(126, 203, 255);
+    z-index: 5;
+    rotate: 5deg;
+    left: 13px;
+    top: 17px;
+}
+
+.box4 {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    transform: skew(-20deg);
+    background: #555;
+    z-index: 3;
+    left: 65px;
+    top: 50px;
+}
+
+.box5 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #8e8e8e;
+    z-index: 6;
+    left: 80px;
+    top: 20px;
+}
+
+.box6{
+    position: absolute;
+    width: 55px;
+    height: 10px;
+    background: #555;
+    z-index: 7;
+    left: 75px;
+    top: 20px;
+}
+
+.box7 {
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    background: rgb(126, 203, 255);
+    border-radius: 10rem 10rem 0 0;
+    z-index: 8;
+    left: 92px;
+    top: 35px;
+}
+
+.box8{
+    position: absolute;
+    width: 10px;
+    height: 13px;
+    background: #ff0000;
+    z-index: 7;
+    left: 110px;
+    top: 7px;
+}
+
+.water1 {
+    position: absolute;
+    height: 150px;
+    width: 20%;
+    border-radius: 50%;
+    background: #0c00b9;
+    bottom: 0%;
+    left: -5%;
+    animation-name: movingWater1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.water2 {
+    position: absolute;
+    height: 150px;
+    width: 20%;
+    border-radius: 50%;
+    background: #0c00b9;
+    bottom: 0%;
+    left: 10%;
+    animation-name: movingWater2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.water3 {
+    position: absolute;
+    height: 150px;
+    width: 20%;
+    border-radius: 50%;
+    background: #0c00b9;
+    bottom: 0%;
+    left: 25%;
+    animation-name: movingWater3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.water4 {
+    position: absolute;
+    height: 150px;
+    width: 20%;
+    border-radius: 50%;
+    background: #0c00b9;
+    bottom: 0%;
+    left: 40%;
+    animation-name: movingWater4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.water5 {
+    position: absolute;
+    height: 150px;
+    width: 20%;
+    border-radius: 50%;
+    background: #0c00b9;
+    bottom: 0%;
+    left: 55%;
+    animation-name: movingWater5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.water6 {
+    position: absolute;
+    height: 150px;
+    width: 20%;
+    border-radius: 50%;
+    background: #0c00b9;
+    bottom: 0%;
+    left: 70%;
+    animation-name: movingWater6;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.water7 {
+    position: absolute;
+    height: 150px;
+    width: 20%;
+    border-radius: 60%;
+    background: #0c00b9;
+    bottom: 0%;
+    left: 85%;
+    animation-name: movingWater7;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.waterbox {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    left: 0%;
+    bottom: 0%;
+    background: #0c00b9;
+}
